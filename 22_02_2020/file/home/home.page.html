@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar align="center" style="color: darkorange;">
+    <ion-title>
+      G Simulation
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content pedding>
+  <ion-card>
+    <ion-card-content>
+      <div class="ion-padding" align="center">
+        <h1>ACCOUNT LOGIN</h1>
+      </div>
+      <!--
+        <div align="left">
+          <ion-input type="E-mail">Username</ion-input>
+          <ion-input type="password">Password</ion-input>
+        </div>
+      -->
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked">E-mail</ion-label>
+          <ion-input type="E-mail" [(ngModel)]="m_email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="m_pass"></ion-input>
+        </ion-item>
+      </ion-list>
+
+      <div style="text-align: center;">
+        <ion-button (click)="login()" color="danger" >Login</ion-button>
+        <ion-button (click)="gotoRegiterPage()" color="light">Register</ion-button>
+      </div>
+
+    </ion-card-content>
+
+  </ion-card>
+
+
+</ion-content>
