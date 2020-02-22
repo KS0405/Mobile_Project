@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar align="center" style="color: rgb(220, 150, 20);">
+    <ion-title>CREATE ACCOUNT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content pedding>
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked">Fullname</ion-label>
+          <ion-input type="text" [(ngModel)]="m_fullname"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Phone number</ion-label>
+          <ion-input type="text" [(ngModel)]="m_phone"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">E-mail</ion-label>
+          <ion-input type="E-mail" [(ngModel)]="m_email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Password</ion-label>
+          <ion-input type="Password" [(ngModel)]="m_pass"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Confirm Password</ion-label>
+          <ion-input type="Password" [(ngModel)]="m_con_pass"></ion-input>
+        </ion-item>
+      </ion-list>
+
+
+      <div align="center" style="padding: 5px;">
+        <ion-button color="danger" block (click)="addRegister()">Submit</ion-button>
+        <ion-button color="light"  block (click)="gotoHomePage()">Sign In</ion-button>
+      </div>
+
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
